@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+*::before,
+*::after {
+  text-decoration: none;
+  margin: 0;
+}
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "width" 100px;
+}
+
+.open-sans-bold {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "width" 100px;
+}
+
+header nav {
+  display: none;
+}
+header {
+  border: none;
+}
+
+header {
+  background: linear-gradient(to bottom, #09121f, #0b131f);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  width: 200px;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.button {
+  background-color: #3a68b8;
+  padding: 10px;
+  border: 1px solid transparent;
+  color: #fff;
+  width: 65px;
+}
+
+.introductionside {
+  padding: 15px;;
+  background: linear-gradient(to bottom, #08101e, #09101e, #09111e);
+}
+.introductionside h5 {
+  color: #3a68b8;
+  font-size: 15px;
+}
+
+.introductionside h1 {
+  color: #fff;
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+.introductionside p {
+  color: #9ea2a7;
+  font-size: 10px;
+  /* margin-top: 30px; */
+}
+.buttonside {
+  margin-top: 15px;
+}
+.startbutton {
+  background: #3a68b8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+}
+.watchbutton {
+  background: #3a68b8;
+  color: #fff;
+   padding: 10px 20px;
+  border: none;
+}
+
+.fa-play{
+  margin-right: 5px;
+}
+.introductionside .rightside .rocket {
+  width: 290px;
+}
+
+.rightside{
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  header nav {
+    display: flex;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  header nav a {
+    margin-left: 40px;
+    color: #fff;
+  }
+
+  header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 12, 45);
+  }
+
+  .button {
+    margin-left: 15px;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+  .introductionside {
+    display: flex;
+     padding: 37px; 
+  }
+
+  .introductionside h5 {
+    font-size: 18px;
+  }
+
+  .introductionside h1 {
+    font-size: 32px;
+  }
+
+  .introductionside p {
+    font-size: 14px;
+  }
+  .buttonside{
+    margin-top: 30px;
+  }
+  .startbutton {
+    padding: 20px;
+  }
+  .watchbutton {
+    padding: 20px;
+  }
+  .introductionside .rightside .rocket {
+    width: 350px;
+  }
+  .introductionside .leftside{
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  header nav {
+    display: flex;
+    margin-left: -250px;
+  }
+
+  .logo {
+    transform: translateX(130px);
+  }
+
+  .button {
+    margin-left: 15px;
+    transform: translateX(-250px);
+  }
+
+  .introductionside {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+  .introductionside h5 {
+    font-size: 20px;
+  }
+
+  .introductionside h1 {
+    font-size: 40px;
+  }
+
+  .introductionside p {
+    font-size: 15px;
+  }
+  .introductionside .rightside .rocket {
+    width: 400px;
+  }
+
+  .introductionside .leftside {
+    padding-right: 100px;
+  }
+
+
+}
+@media(min-width:1200px){
+  .introductionside h1{
+    font-size: 40px;
+  }
+  .introductionside .rightside .rocket{
+    width: 420px;
+  }
+.introductionside p{
+  font-size: 20px;
+}
+}
+
+@media(min-width:1300px){
+  .introductionside h1{
+    font-size: 70px;
+  }
+  .introductionside .rightside .rocket{
+    width: 570px;
+  }
+  .introductionside p{
+    font-size: 22px;
+  }
+}
