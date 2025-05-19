@@ -5,6 +5,8 @@
 *::after {
   text-decoration: none;
   margin: 0;
+  border: none;
+  outline: none;
 }
 
 .open-sans-normal {
@@ -22,7 +24,13 @@
   font-style: normal;
   font-variation-settings: "width" 100px;
 }
-
+.open-sans-bold2 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "width" 100px;
+}
 header nav {
   display: none;
 }
@@ -36,6 +44,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  border: none !important;
 }
 .logo {
   width: 200px;
@@ -56,6 +65,7 @@ header {
 .introductionside {
   padding: 15px;;
   background: linear-gradient(to bottom, #08101e, #09101e, #09111e);
+  border: none !important;
 }
 .introductionside h5 {
   color: #3a68b8;
@@ -79,14 +89,15 @@ header {
 .startbutton {
   background: #3a68b8;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10 15px;
   border: none;
   margin-right: 10px;
+
 }
 .watchbutton {
   background: #3a68b8;
   color: #fff;
-   padding: 10px 20px;
+  padding: 10 15px;
   border: none;
 }
 
@@ -100,7 +111,53 @@ header {
 .rightside{
   margin-top: 40px;
 }
-@media (min-width: 768px) {
+
+.companies-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to bottom,#09111E,#09111F);
+  border: none !important;
+}
+
+.companies-section .company:nth-child(3),
+.companies-section .company:nth-child(4){
+  display: none;
+}
+
+.companies-section .company:nth-child(1),
+.companies-section .company:nth-child(2){
+width: 135px;
+padding-top:15px ;
+}
+
+.ai-section{
+  padding: 15px;
+  background:#020a18 ;
+  border: none;
+}
+.ai-section img{
+  width: 300px;
+}
+
+.ai-section h1{
+  color: #fff;
+}
+.ai-section article{
+  color: #a2a4aa;
+  margin: 18px 0;
+  font-size: 12px;
+}
+.ai-section .rightside .btnside .learnmore  {
+  
+    background-color: #3a68b8;
+    padding: 8px;
+    border: none;
+    color: #fff;
+    width: 90px;
+  
+}
+@media(min-width:768px) {
   header nav {
     display: flex;
   }
@@ -110,7 +167,7 @@ header {
   }
 
   header nav a {
-    margin-left: 40px;
+    margin-left: 30px;
     color: #fff;
   }
 
@@ -120,15 +177,17 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(12, 12, 45);
+    border: none !important;
   }
 
   .button {
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .logo {
-    margin-left: 10px;
+    margin-left: 25px;
   }
+
   .introductionside {
     display: flex;
      padding: 37px; 
@@ -139,7 +198,7 @@ header {
   }
 
   .introductionside h1 {
-    font-size: 32px;
+    font-size: 31px;
   }
 
   .introductionside p {
@@ -160,9 +219,62 @@ header {
   .introductionside .leftside{
     padding-top: 30px;
   }
+
+  .companies-section .company:nth-child(3),
+  .companies-section .company:nth-child(4){
+    display: flex;
+  }
+
+  .companies-section .company:nth-child(1),
+.companies-section .company:nth-child(2),
+.companies-section .company:nth-child(3),
+  .companies-section .company:nth-child(4){
+width: 150px;
+padding-top:15px ;
 }
 
-@media (min-width: 992px) {
+.ai-section{
+display: flex;
+align-items: center;
+padding: 37px;
+}
+
+.ai-section .leftside img{
+width: 390px;
+margin-left: 20px;
+}
+
+.ai-section .rightside{
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.ai-section .rightside h1{
+  font-size: 17px;
+}
+
+.ai-section .rightside article{
+  font-size: 11px;
+}
+
+.ai-section .rightside .btnside .learnmore{
+  background: #3a68b8;
+  color: #fff;
+   padding: 10px 15px;
+  border: none;
+  width: 125px; 
+  height: 45px;
+}
+
+}
+
+@media(min-width:880px) and (max-width:900px){
+  .ai-section .rightside h1{
+    font-size: 26px;
+    }
+}
+  
+
+@media(min-width: 992px) {
   header nav {
     display: flex;
     margin-left: -250px;
@@ -200,6 +312,39 @@ header {
     padding-right: 100px;
   }
 
+.companies-section{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.companies-section{
+  padding-left: 130px;
+  padding-right: 200px;
+ ;
+}
+
+.ai-section{
+  display: flex;
+  align-items: center;
+}
+.ai-section .leftside img{
+  width: 490px;
+  margin-left: 50px;
+}
+
+.ai-section .rightside{
+  padding-left: 80px;
+  padding-right: 150px;
+}
+.ai-section .rightside h1{
+   font-size: 35px;
+  }
+
+  .ai-section .rightside article{
+    margin: 20px 0;
+    font-size: 13px;
+  }
+
 
 }
 @media(min-width:1200px){
@@ -216,12 +361,41 @@ header {
 
 @media(min-width:1300px){
   .introductionside h1{
-    font-size: 70px;
+    font-size: 55px;
   }
   .introductionside .rightside .rocket{
-    width: 570px;
+    width: 500px;
   }
   .introductionside p{
-    font-size: 22px;
+    font-size: 18px;
   }
+  .companies-section{
+    padding-left: 120px;
+    padding-right: 200px;
+   ;
+}
+
+.companies-section .company:nth-child(1),
+.companies-section .company:nth-child(2),
+.companies-section .company:nth-child(3),
+  .companies-section .company:nth-child(4){
+width: 200px;
+}
+
+.ai-section .leftside img{
+  margin-left: 120px;
+}
+.ai-section .rightside{
+  padding-left: 150px;
+  padding-right: 240px;
+}
+
+.ai-section .rightside h1{
+  font-size: 32px;
+}
+
+.ai-section .rightside article{
+  font-size: 15px;
+}
+
 }
